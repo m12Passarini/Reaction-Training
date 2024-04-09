@@ -1,0 +1,26 @@
+* {
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.inputs {
+    flex-direction: column-reverse;
+    display: flex;
+    padding: 16px;
+    box-sizing: 16px 64px;
+    max-width: 300px;
+}
+
+#initial {
+    display: flex;
+    width: 40px;
+    margin-left: 16px;
+}
+
+#reset {
+    display: none;
+    margin-top: 16px;
+    margin-left: 16px;
+}
