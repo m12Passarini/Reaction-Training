@@ -1,3 +1,4 @@
+
 * {
     font-family: 'Inconsolata', monospace;
     font-family: 'Inter', sans-serif;
@@ -11,6 +12,11 @@
     padding: 16px;
     box-sizing: 16px 64px;
     max-width: 300px;
+}
+
+#options {
+    display: flex;
+    margin: 16px;
 }
 
 #initial {

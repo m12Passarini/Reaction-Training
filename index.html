@@ -21,15 +21,23 @@
     
     <div class="inputs">
 
-        <input type="number" id="options">Quantidade de opções
+        <!-- <input type="number" id="options">Quantidade de opções -->
         <input type="number" id="switchtime">Tempo de cada troca (segundos)
         <input type="number" id="alltime">Tempo total (segundos)
 
     </div>
-    
+
+        <select id="options">
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+        </select>
+
         <button id="initial">Iniciar</button>
 
         <button id="reset">Resetar</button>
+
+        <span id="display"></span>
 
     <script src="scr.js"></script>
 </body>
