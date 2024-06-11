@@ -4,6 +4,17 @@
     font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
+
+}
+
+#title {
+    display: flex;
+    text-align: center;
+    font-size: 45px;
+}
+
+#paragraph {
+
 }
 
 .inputs {
@@ -11,22 +22,38 @@
     display: flex;
     padding: 16px;
     box-sizing: 16px 64px;
-    max-width: 300px;
+    max-width: 400px;
+}
+
+#alltime {
+    border-radius: 4px;
+}
+
+#switchtime {
+    border-radius: 4px;
 }
 
 #options {
     display: flex;
     margin: 16px;
+    border-radius: 4px;
 }
 
 #initial {
     display: flex;
-    width: 40px;
+    width: 50px;
     margin-left: 16px;
+    border-radius: 3px;
+    border-width: 1px;
 }
 
 #reset {
     display: none;
     margin-top: 16px;
     margin-left: 16px;
+    border-radius: 3px;
+}
+
+#display {
+
 }

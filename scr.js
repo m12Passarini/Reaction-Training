@@ -74,7 +74,7 @@ function working(condition) {
       }
     }, switchTimeEl.value * 1000);
   
-    setTimeout(() => {
+    timeOut = setTimeout(() => {
       clearInterval(interval)
       end()
     }, allTimeEl.value * 1000); 
@@ -82,6 +82,7 @@ function working(condition) {
   } else {
 
     clearInterval(interval)
+    clearTimeout(timeOut)
 
   }
 }
