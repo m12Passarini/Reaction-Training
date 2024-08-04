@@ -1,59 +1,109 @@
-
 * {
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Inter', sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #191919;
+  color: #FFF;
 
 }
 
-#title {
-    display: flex;
-    text-align: center;
-    font-size: 45px;
+.header {
+  padding-top: 20px;
+}
+
+#title { 
+  display: flex;
+  text-align: center;
+  font-size: 50px;
+  justify-content: center;
+  color: #FFF;
 }
 
 #paragraph {
-
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  justify-content: center;
 }
 
 .inputs {
-    flex-direction: column-reverse;
-    display: flex;
-    padding: 16px;
-    box-sizing: 16px 64px;
-    max-width: 400px;
+  padding-top: 20px;
+  padding-bottom:20px;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  width: 400px;
+  background-color: #282828;
+  border-radius: 8px;
 }
 
 #alltime {
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 #switchtime {
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 #options {
-    display: flex;
-    margin: 16px;
-    border-radius: 4px;
+  display: flex;
+  margin: 16px;
+  border-radius: 4px;
 }
 
 #initial {
-    display: flex;
-    width: 50px;
-    margin-left: 16px;
-    border-radius: 3px;
-    border-width: 1px;
+  display: flex;
+  width: 50px;
+  margin-left: 16px;
+  border-radius: 3px;
+  border-width: 1px;
+  justify-content: center;
 }
 
 #reset {
-    display: none;
-    margin-top: 16px;
-    margin-left: 16px;
-    border-radius: 3px;
+  display: none;
+  margin-top: 16px;
+  margin-left: 16px;
+  border-radius: 3px;
+  justify-content: center;
+
 }
 
 #display {
+  font-size: 220px;
+  display: flex;
+  justify-content: center;
+}
 
+
+.init {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.finish {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  background: #565656;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

@@ -14,30 +14,33 @@
         <h1 id="title">
             Reaction Training
         </h1>
+
         <p id="paragraph">
-            I dont know
+            Here you can improve your reflexes!
         </p>
     </div>
-    
-    <div class="inputs">
 
-        <!-- <input type="number" id="options">Quantidade de opções -->
-        <input type="number" id="switchtime">Tempo de cada troca (segundos)
-        <input type="number" id="alltime">Tempo total (segundos)
-
-    </div>
-
-        <select id="options">
+    <div class="main">
+      <div class="inputs">
+          <input type="number" id="switchtime">Switch Time (seconds)
+          <select id="options">
             <option value="2">2</option>
             <option value="4">4</option>
             <option value="6">6</option>
-        </select>
+          </select>
+          <input type="number" id="alltime">Full time (seconds)
+      </div>
+    </div>
 
-        <button id="initial">Iniciar</button>
+    <div class="init">
+      <button id="initial">Start</button>
+    </div>
 
-        <button id="reset">Resetar</button>
+    <span id="display"></span>
 
-        <span id="display"></span>
+    <div class="finish">
+      <button id="reset">Finish</button>
+    </div>
 
     <script src="scr.js"></script>
 </body>
