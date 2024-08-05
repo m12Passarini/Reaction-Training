@@ -57,10 +57,16 @@ const working = (condition) => {
 
     interval = setInterval(() => {
       const decision = Math.floor(Math.random() * (arrayal.length + 1));
+
+      if (displayEl.classList.contains("colorDisplay")) {
+        displayEl.classList.remove("colorDisplay");
+      } else {
+        displayEl.classList.add("colorDisplay");
+      }
+
       if (decision === 0) {
         console.log(decision + 1);
         displayEl.innerHTML = decision + 1;
-
 
       } else {
         console.log(decision);
