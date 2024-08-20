@@ -58,10 +58,12 @@ const working = (condition) => {
     interval = setInterval(() => {
       const decision = Math.floor(Math.random() * (arrayal.length + 1));
 
-      if (displayEl.classList.contains("colorDisplay")) {
-        displayEl.classList.remove("colorDisplay");
-      } else {
-        displayEl.classList.add("colorDisplay");
+      if (displayEl.classList.contains("colorDisplayYellow")) {
+        displayEl.classList.remove("colorDisplayYellow");
+        displayEl.classList.add("colorDisplayGreen");
+      } else if (displayEl.classList.contains("colorDisplayGreen")) {
+        displayEl.classList.add("colorDisplayYellow");
+        displayEl.classList.remove("colorDisplayGreen");
       }
 
       if (decision === 0) {
@@ -80,7 +82,6 @@ const working = (condition) => {
     }, allTimeEl.value * 1000);
 
   } else {
-
     clearInterval(interval);
     clearTimeout(timeOut);
   }
