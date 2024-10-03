@@ -55,8 +55,13 @@ const working = (condition) => {
 
   if (condition) {
 
+    displayEl.innerHTML = "";
+
     interval = setInterval(() => {
-      const decision = Math.floor(Math.random() * (arrayal.length + 1));
+      const decision = () => {
+        number = Math.floor(Math.random() * (arrayal.length + 1));
+        return number;
+      }
 
       if (displayEl.classList.contains("colorDisplayYellow")) {
         displayEl.classList.remove("colorDisplayYellow");
@@ -66,13 +71,18 @@ const working = (condition) => {
         displayEl.classList.remove("colorDisplayGreen");
       }
 
-      if (decision === 0) {
-        console.log(decision + 1);
-        displayEl.innerHTML = decision + 1;
+      decision()
+
+      if (number === 0) {
+        while (number === 0) {
+          decision()
+        }
+        console.log(number);
+        displayEl.innerHTML = number;
 
       } else {
-        console.log(decision);
-        displayEl.innerHTML = decision;
+        console.log(number);
+        displayEl.innerHTML = number;
       }
     }, switchTimeEl.value * 1000);
 
