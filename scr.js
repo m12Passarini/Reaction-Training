@@ -37,21 +37,17 @@ const end = () => {
   working(false);
 }
 
-let arrayal = [];
+const numbers = () => {
+  const arrayal = {
+    "2": [1, 2],
+    "4": [1, 2, 3, 4],
+    "6": [1, 2, 3, 4, 5, 6]
+  }
+
+  return arrayal[optionsEl.value] || "Error"
+}
 
 const working = (condition) => {
-  switch (optionsEl.value) {
-    case '2':
-      arrayal = [1, 2];
-    break;
-    case '4':
-      arrayal = [1, 2, 3, 4];
-    break;
-    case '6':
-      arrayal = [1, 2, 3, 4, 5, 6];
-    break;
-    default: console.log('Error');
-  }
 
   if (condition) {
 
@@ -59,7 +55,7 @@ const working = (condition) => {
 
     interval = setInterval(() => {
       const decision = () => {
-        number = Math.floor(Math.random() * (arrayal.length + 1));
+        number = Math.floor(Math.random() * (numbers().length + 1));
         return number;
       }
 
