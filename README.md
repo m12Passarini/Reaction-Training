@@ -1,11 +1,14 @@
-# Reaction-Training
+# Reaction Training
 
 A simple and functional website for training your reaction time. With this tool, you can easily **control your rhythm, time, and options to improve your reflexes.** 
 
-Initially, this website was designed for training alone, without any special equipment—just using your phone, tablet, or any device with internet access.
+Initially, this website was designed for training alone, without any special equipment just using your phone, tablet, or any device with internet access.
 
 ---
-![Project Screen](img/Screenprint.jpeg)
+<div align="center">
+  <img src="img/Screenprint.jpeg" width="400"/>
+</div>
+
 
 ## Features
 - Adjustable reaction time settings.
