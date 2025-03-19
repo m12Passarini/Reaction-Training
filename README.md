@@ -1,10 +1,10 @@
 # Reaction-Training
 
-A simple and functional website for training your reaction time.  
-With this tool, you can easily control your rhythm, time, and options to improve your reflexes.  
+A simple and functional website for training your reaction time. With this tool, you can easily **control your rhythm, time, and options to improve your reflexes.** 
 
 Initially, this website was designed for training alone, without any special equipment—just using your phone, tablet, or any device with internet access.
 
+---
 ![Project Screen](img/Screenprint.jpeg)
 
 ## Features
@@ -12,8 +12,8 @@ Initially, this website was designed for training alone, without any special equ
 - Simple and intuitive interface.
 - Works on any device with internet access.
 
-## Demo
-🔗 [Live Demo](#) *(https://reactiontraining.netlify.app/)*
+## Website
+🔗 [Website ->](#) *(https://reactiontraining.netlify.app/)*
 
 ## Technologies Used
 - HTML
@@ -26,6 +26,7 @@ To run this project locally:
 git clone https://github.com/your-username/Reaction-Training.git
 cd Reaction-Training
 code .
+```
 
 ## Contributing
 
