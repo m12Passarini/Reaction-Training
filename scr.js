@@ -62,7 +62,7 @@ const working = (condition) => {
       if (displayEl.classList.contains("colorDisplayYellow")) {
         displayEl.classList.remove("colorDisplayYellow");
         displayEl.classList.add("colorDisplayGreen");
-      } else if (displayEl.classList.contains("colorDisplayGreen")) {
+      } else {
         displayEl.classList.add("colorDisplayYellow");
         displayEl.classList.remove("colorDisplayGreen");
       }
@@ -73,11 +73,10 @@ const working = (condition) => {
         while (number === 0) {
           decision()
         }
-        console.log(number);
+        
         displayEl.innerHTML = number;
 
       } else {
-        console.log(number);
         displayEl.innerHTML = number;
       }
     }, switchTimeEl.value * 1000);

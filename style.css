@@ -1,10 +1,17 @@
 * {
   font-family: 'Inter', sans-serif;
-  /* font-family: 'Inconsolata', monospace; */
   padding: 0;
   margin: 0;
   background-color: #191919;
   color: #4dd89b;
+
+  @media (min-width: 800px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 28px;
+  }
 }
 
 .header {
@@ -14,9 +21,17 @@
 #title {
   display: flex;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   justify-content: center;
   color: #f7d320;
+
+  @media (min-width: 800px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 70px;
+  }
 }
 
 #paragraph {
@@ -25,6 +40,14 @@
   font-size: 16px;
   justify-content: center;
   color: #4dd89b;
+
+  @media (min-width: 800px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 28px;
+  }
 }
 
 .inputs {
@@ -35,67 +58,80 @@
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
-  width: 400px;
+  width: 300px;
   background-color: #282828;
   border-radius: 8px;
+
+  @media (min-width: 800px) {
+    width: 450px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 550px;
+  }
 }
 
-#alltime {
-  border-radius: 4px;
-  color: #f7d320;
-}
-
+#alltime,
 #switchtime {
-  border-radius: 4px;
+  border-radius: 3px;
   color: #f7d320;
 }
 
 #options {
   display: flex;
   margin: 16px;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 #initial {
   display: flex;
-  width: 50px;
-  margin-left: 16px;
+  width: 55px;
   border-radius: 3px;
   border-width: 1px;
   justify-content: center;
+
+  @media (min-width: 800px) {
+    width: 65px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 85px;
+  }
 }
 
 #reset {
   display: none;
+  width: 55px;
   margin-top: 16px;
-  margin-left: 16px;
   border-radius: 3px;
+  border-width: 1px;
   justify-content: center;
   color:#4dd89b;
 
+  @media (min-width: 800px) {
+    width: 65px;
+  }
 
+  @media (min-width: 1280px) {
+    width: 85px;
+  }
 }
 
 #display {
-  font-size: 220px;
+  font-size: 280px;
   display: flex;
   justify-content: center;
-  height: 260px;
+  height: 340px;
 }
 
 
-.init {
+.init, 
+.finish  {
   width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
   color:#4dd89b;
-}
-
-.finish {
-  display: flex;
-  justify-content: center;
-  color: #4dd89b;
 }
 
 .main {
