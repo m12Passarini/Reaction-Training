@@ -16,7 +16,7 @@ Initially, this website was designed for training alone, without any special equ
 - Works on any device with internet access.
 
 ## Website
-🔗 [Website ->](#) *(https://reactiontraining.netlify.app/)*
+🔗 *(https://reactiontraining.netlify.app/)*
 
 ## Technologies Used
 - HTML
